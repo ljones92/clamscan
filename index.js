@@ -370,8 +370,6 @@ class NodeClam {
 
         // Flags specific to clamdscan
         else if (scanner === 'clamdscan') {
-            flags_array.push('--fdpass');
-
             // Remove infected files
             if (settings.remove_infected === true) flags_array.push('--remove');
 
